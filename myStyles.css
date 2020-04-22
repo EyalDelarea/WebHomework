@@ -1,8 +1,11 @@
-* {
-    /*
-     border: 1px solid red;
-     */
-}
+
+
+/**
+CSS File contains all the styles
+needed for the website
+
+Created by Yohai Mizrhai & Eyal Delarea
+ */
 p{
   text-decoration: red;
 }
