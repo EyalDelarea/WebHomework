@@ -1,13 +1,11 @@
-
-
 /**
 CSS File contains all the styles
 needed for the website
 
 Created by Yohai Mizrhai & Eyal Delarea
  */
-p{
-  text-decoration: red;
+p {
+    text-decoration: red;
 }
 
 .description {
@@ -15,10 +13,13 @@ p{
     margin-left: 10px;
 
 }
+#body{
+    margin-top:150px;
+}
 
-.logo{
+.logo {
     width: 100px;
-    height:70px;
+    height: 70px;
 }
 
 .itemTitle {
@@ -105,7 +106,7 @@ p{
     background: grey;
 }
 
-.footer{
+.footer {
     background: black;
 }
 
