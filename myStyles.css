@@ -4,6 +4,8 @@ needed for the website
 
 Created by Yohai Mizrhai & Eyal Delarea
  */
+
+
 p {
     text-decoration: red;
 }
@@ -13,17 +15,14 @@ p {
     margin-left: 10px;
 
 }
-#body{
-    margin-top:150px;
+
+#body {
+    margin-top: 150px;
 }
 
 .logo {
     width: 100px;
     height: 70px;
-}
-
-.itemTitle {
-
 }
 
 .itemPrice {
@@ -32,10 +31,6 @@ p {
 
 .itemDescription {
     margin-top: 10px;
-}
-
-.item_Photo {
-    object-fit: cover;
 }
 
 .button {
