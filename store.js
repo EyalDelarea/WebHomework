@@ -25,7 +25,7 @@ function ready() {
 
     var addToCartButtons = document.getElementsByClassName('addToCart')
     for (var i = 0; i < addToCartButtons.length; i++) {
-        var button = addToCartButtons[i]
+        var button = addToCartButtons[i];
         button.addEventListener('click', addToCartClicked)
     }
 
@@ -73,8 +73,8 @@ function addToCartClicked(event) {
 
     addItemToCart(title, price, image);
     updateCartTotal();
-    var elmnt = document.getElementById("cart");
-    elmnt.scrollIntoView();
+    window.alert("Your item has been added to your cart");
+
 
 }
 

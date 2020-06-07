@@ -220,8 +220,8 @@ p {
 }
 
 .totalText{
-    text-align: right;
+    alignment: left;
 }
 .purchase{
-   text-align: right;
+   text-align: left;
 }
