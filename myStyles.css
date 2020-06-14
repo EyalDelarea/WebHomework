@@ -16,7 +16,7 @@ p {
 
 }
 
-#body {
+#store {
     margin-top: 150px;
 }
 
@@ -164,8 +164,8 @@ p {
 }
 
 .cart-quantity-input {
-    height: 34px;
-    width: 50px;
+    height: 45px;
+    width: 60px;
     border-radius: 5px;
     border: 1px solid #56CCF2;
     background-color: #eee;
@@ -224,4 +224,16 @@ p {
 }
 .purchase{
    text-align: left;
+}
+
+.aboutAndForm{
+    margin-top: 30px;
+}
+
+.quantity{
+    width: 10%;
+    font-size: 15px;
+}
+#purchaseButton{
+   size: 40px;
 }

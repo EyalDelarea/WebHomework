@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c86a670b-0c1c-48c2-96f8-8534ea0946dc" name="XAMPP Apache" url="http://localhost/eyal">
+        <fileTransfer port="0" mountedRoot="C:\Users\eyald\PhpstormProjects\WebHomework" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

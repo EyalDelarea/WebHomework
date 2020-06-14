@@ -12,7 +12,7 @@
 
  */
 
-if (document.readyState == 'loading') {
+if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
     ready()
@@ -21,15 +21,19 @@ if (document.readyState == 'loading') {
 function ready() {
 
 
-    updateCartTotal();
+    document.getElementById("purchaseButton").addEventListener('click',sendForms);
 
-    var addToCartButtons = document.getElementsByClassName('addToCart')
-    for (var i = 0; i < addToCartButtons.length; i++) {
-        var button = addToCartButtons[i];
-        button.addEventListener('click', addToCartClicked)
-    }
+}
 
-    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+function sendForms(){
+    window.location.href = "http://localhost/webhomework/shoppingCart.php";
+    document.getElementById('form0').submit();
+    document.getElementById('form2').submit();
+    document.getElementById('form3').submit();
+    document.getElementById('form4').submit();
+    document.getElementById('form5').submit();
+
+
 }
 
 function purchaseClicked() {
@@ -132,17 +136,18 @@ function addItemToCart(title, price, imageSrc) {
  *
  */
 function updateCartTotal() {
-    var cartItemContainer = document.getElementsByClassName('cart')[0];
-    var cartRows = cartItemContainer.getElementsByClassName('cart-row');
-    var total = 0
-    for (var i = 0; i < cartRows.length; i++) {
-        var cartRow = cartRows[i]
-        var priceElement = cartRow.getElementsByClassName('cart-price')[0];
-        var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0];
-        var price = parseFloat(priceElement.innerText.replace('$', ''));
-        var quantity = quantityElement.value
-        total = total + (price * quantity)
-    }
-    total = Math.round(total * 100) / 100
-    document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
+//     var cartItemContainer = document.getElementsByClassName('cart')[0];
+//     var cartRows = cartItemContainer.getElementsByClassName('cart-row');
+//     var total = 0
+//     for (var i = 0; i < cartRows.length; i++) {
+//         var cartRow = cartRows[i]
+//         var priceElement = cartRow.getElementsByClassName('cart-price')[0];
+//         var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0];
+//         var price = parseFloat(priceElement.innerText.replace('$', ''));
+//         var quantity = quantityElement.value
+//         total = total + (price * quantity)
+//     }
+//     total = Math.round(total * 100) / 100
+//     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
+// }
 }
