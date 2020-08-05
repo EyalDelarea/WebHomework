@@ -29,6 +29,7 @@ p {
     margin-top: 10px;
 }
 
+
 .itemDescription {
     margin-top: 10px;
 }
@@ -38,6 +39,11 @@ p {
 
     margin-bottom: 5px;
 
+}
+div.item_photo {
+
+    height: 100px;
+    width: 50%;
 }
 
 .item {
@@ -234,6 +240,8 @@ p {
     width: 10%;
     font-size: 15px;
 }
-#purchaseButton{
-   size: 40px;
+#purchaseButton {
+    size: 40px;
+
 }
+
