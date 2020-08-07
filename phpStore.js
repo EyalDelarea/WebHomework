@@ -2,15 +2,23 @@ $SHIPPING_PRICE = 5;
 
 
 $(document).ready(function () {
+
     //update total price when load
     updateSubTotal();
 
+
     /**
      * Reloads the products table from the database
+     * #refresh - button ID
+     * #load into div with ID #cartContent cart.php file
      */
-    $("#refresh").click(function () {
-       location.reload();
-    });
+    $('#refresh').on("click",function(){
+        $("#cartContent").load("cart.php",function(){
+            alert("Data has been refreshed from the database!");
+        });
+
+    })
+
 
     /**
      * Dynamic search function using ajax
@@ -73,6 +81,15 @@ function updateSubTotal() {
     totalPriceToUpdate.innerText = sum + " $";
     //shipping price is a const.
     doneTotal.innerText = (sum + $SHIPPING_PRICE) + " $";
+}
+
+/**
+ * Only effect for checkout experience
+ */
+function checkoutEffect() {
+    alert("Thank you for your purchase!");
+    window.location.reload();
+
 }
 
 
